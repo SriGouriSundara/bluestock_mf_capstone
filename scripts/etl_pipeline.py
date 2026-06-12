@@ -1,3 +1,17 @@
+"""
+Bluestock Mutual Fund Analytics Capstone
+Script Name: etl_pipeline.py
+Purpose:
+Load, validate, and process mutual fund datasets
+used throughout the analytics pipeline.
+Tasks Performed:
+- Load raw CSV files
+- Validate data structure
+- Identify missing values and anomalies
+- Prepare data for cleaning and analysis
+
+Author: Sri Gouri Sundara
+"""
 import pandas as pd 
 from pathlib import Path
 import os
@@ -38,9 +52,7 @@ for dataset_name, file_path in files.items():
     print("\nData Types:")
     print(df.dtypes)
 
-    print("\nFirst 5 Rows:")
-    print(df.head())
-
+   
 #
 # fund matser analysis
 #
@@ -56,10 +68,7 @@ print("\nSub Categories")
 print(fund_master["sub_category"].unique())
 print("\nRisk Grades")
 print(fund_master["risk_category"].unique())
-
-#
 # amfi code validation
-#
 print("\n" + "="*60)
 print("AMFI CODE VALIDATION")
 print("="*60)

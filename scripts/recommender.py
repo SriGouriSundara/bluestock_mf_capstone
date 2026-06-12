@@ -1,3 +1,21 @@
+"""
+Bluestock Mutual Fund Analytics Capstone
+Script Name: recommender.py
+Purpose:
+Recommend mutual funds based on
+investor risk appetite.
+Risk Categories:
+- Low Risk
+- Moderate Risk
+- High Risk
+Tasks Performed:
+- Read performance metrics
+- Filter by risk profile
+- Rank funds using Sharpe Ratio
+- Display top recommendations
+
+Author: Sri Gouri Sundara
+"""
 import pandas as pd
 
 scorecard = pd.read_csv(

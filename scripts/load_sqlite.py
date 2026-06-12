@@ -1,3 +1,16 @@
+"""
+Bluestock Mutual Fund Analytics Capstone
+Script Name: load_sqlite.py
+Purpose:
+Load cleaned mutual fund datasets into
+the SQLite database.
+Tasks Performed:
+- Establish SQLite connection
+- Create database tables
+- Insert cleaned datasets
+- Verify successful loading
+Author: Sri Gouri Sundara
+"""
 import pandas as pd
 import sqlite3
 from pathlib import Path

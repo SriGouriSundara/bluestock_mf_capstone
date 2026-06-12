@@ -19,4 +19,4 @@ for script in scripts:
         print(f"Error while running {script}")
         sys.exit(1)
 
-print("\nProject Pipeline Completed Successfully!")
+print("\nProject Pipelinee Completed Successfully!")

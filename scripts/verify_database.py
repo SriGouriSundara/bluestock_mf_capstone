@@ -1,3 +1,17 @@
+"""
+Bluestock Mutual Fund Analytics Capstone
+Script Name: verify_database.py
+Purpose:
+Verify database integrity and validate
+record counts after data loading.
+Tasks Performed:
+- Check table existence
+- Validate row counts
+- Confirm successful database population
+- Perform basic quality checks
+
+Author: Sri Gouri Sundara
+"""
 import sqlite3
 from pathlib import Path
 
